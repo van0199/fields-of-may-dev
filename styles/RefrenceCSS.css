@@ -1,0 +1,52 @@
+/* ----------THIS IS NOT IN USE ------------------------ */
+
+
+/* --------------------Links */
+.livetext a {
+  /* color: #0070f3;
+  text-decoration: none; */
+}
+
+/* .livetext a:hover,
+.livetext a:focus,
+.livetext a:active {
+  text-decoration: underline;
+} */
+
+
+
+
+
+
+/* -----------------Dark scheme */
+@media (prefers-color-scheme: dark) {
+    /*  filter: invert(1); */
+   
+   }
+   
+
+
+
+
+
+/*  --------------------Meadia quares */
+   @media (max-width: 600px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

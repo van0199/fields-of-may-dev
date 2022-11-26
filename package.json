@@ -1,0 +1,40 @@
+{
+  "name": "fields-of-may",
+  "homepage": "https://fieldsofmay.net/",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/material": "^5.10.1",
+    "@mui/styled-engine-sc": "^5.10.1",
+    "axios": "^1.2.0",
+    "bootstrap": "^5.2.0",
+    "draggable_dialog": "^1.0.3",
+    "hamburger-react": "^2.5.0",
+    "mobile-menu": "^4.0.0",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-device-detect": "^2.2.2",
+    "react-dom": "18.2.0",
+    "react-hover": "^3.0.1",
+    "react-router-dom": "^6.4.0",
+    "styled-components": "^5.3.5"
+  },
+  "scripts": {
+    "client": "next",
+    "server": "cd value-parse-server && npm start",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "build": "next build",
+    "start": "next start",
+    "prod": "next export"
+  },
+  "devDependencies": {
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5"
+  }
+}

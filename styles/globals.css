@@ -1,0 +1,267 @@
+
+/* hide scrollbar but allow scrolling */
+div {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+}
+
+div::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+:root {
+  --s-5: 5px;
+  --s-10: 10px;
+  --s-20: 20px;
+  --s-40: 40px;
+  --s-80: 80px;
+  --s-160: 160px;
+  --s-320: 320px;
+  --m-40: -40px;
+  --m-20: -20px;
+  --s-content: calc(100vh - var(--s-80) - var(--s-10));
+  /* --s-content-ex-small: calc(1px * var(--full-width)); */
+  --s-content-ex-small: .9rem;
+  --full-width: 100vw;
+  --containerHeader: 'IBMPlexMono';
+  --bot-spaceing: .1rem;
+  --xx-small-font: clamp(.75rem,.10vw,.1rem);
+  --exx-small-font: clamp(.75rem,10vw,.9rem);
+  --ex-small-font: clamp(.75rem,10vw,1rem);
+  --small-font: 14pt;
+  --med-font: 24pt;
+  --large-font: 18.425vw;
+  --xl-large-font: 20.425vw;
+  --line-height: 16.425vw;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+
+@font-face {
+  font-family: 'PicNic';
+  src: url('../public/assets/fonts/webfonts/PicNic-Regular.woff');
+  /* src: url('../asset/OpenSans/OpenSans-Medium.ttf'); */
+  font-weight: 400;
+  font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'IBMPlexMono';
+    src: url('../public/assets/fonts/webfonts/IBMPlexMono-Regular.ttf');
+    /* src: url('../asset/OpenSans/OpenSans-Medium.ttf'); */
+    font-weight: 100;
+    font-style:normal;
+    }
+
+    @font-face {
+      font-family: 'Hermes-Bold';
+      src: url('../public/assets/fonts/webfonts/Hermes-Bold.otf');
+      /* src: url('../asset/OpenSans/OpenSans-Medium.ttf'); */
+      font-weight: 100;
+      font-style:normal;
+      }
+
+      @font-face {
+        font-family: 'Helvetica Neue';
+        src: url("../public/assets/fonts/webfonts/HelveticaNeue.ttf") ;
+        /* font-weight: 300; */
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Helveticalight';
+        src: url("../public/assets/fonts/webfonts/HelveticaNeueLight.ttf") ;
+        /* font-weight: 300; */
+        font-style: normal;
+        font-display: swap;
+      }
+
+
+
+
+
+
+html,
+body {
+  font-family: "Helvetica Neue LT W01_65 Md",helvetica,sans-serif;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+  color: #000dff;
+  /* #3636f8 #000dff; */
+  overflow-y: hidden;
+  overflow-x: hidden;
+  /* cursor: url(../public/assets/images/cursor.cur) -50 -50, auto!important; */
+    /* font-family: 'IBMPlexMono';  */
+    background: #00002C;
+    transition: all 0.75s ease-in-out;
+    transition: opacity 0.35s, padding-left 0.75s;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+    /* background: #0000ff;   */
+    /* background: linear-gradient(to bottom, rgba(0,0,255,0.65) 0%, rgba(0,0,255,0) 100%);    background: radial-gradient(circle at center , #6b70ff 0,#4134ff 20%,#3535ff, #0000ff 100%);    */
+    background: radial-gradient(circle at center , #53535396 0,#271d7c76 20%,#00002c, #050567 100%);
+    /* background: radial-gradient(circle at center , #ffffff96 0,#8b83ff76 20%,#4444ff, #0000ff 100%); */
+    /* background: radial-gradient(circle at center , #ffffff96 0,#0000ff76 40%,#12129176, #00002C 100%); */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* p{
+  color: white;
+  mix-blend-mode:difference;
+} */
+
+section{
+  transition: margin-top 0.75s ease-in-out;
+  min-height: calc(2vh - .25vw);
+  width: 99vw;
+  transition: all 0.75s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    /* color: white; */
+    /* background: black; */
+  }
+}
+
+
+@supports not (text-decoration-thickness: 2px) {
+  section::before {    
+    content: "Your browser doesn't support text-decoration-thickness";
+    display: block;
+    color: #e43;
+    font-weight: bold;
+    /* background-color: #fff; */
+    padding: 1em;
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+
+
+
+
+  @keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+  opacity: .5;
+  z-index: -1;
+  /* z-index: 20; */
+  margin: 0;
+            padding: 0;
+            position: fixed;
+            touch-action: none;
+  pointer-events: none;
+}
+
+
+select:focus {
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+  border-color: rgba(0, 128, 0, 0);
+  outline: 0;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+
+    /* ---------sub menu mobile*/
+select {
+  width: 80vw;
+  overflow: hidden;
+  white-space: pre;
+  text-overflow: ellipsis;
+  background-color: #ff7f5000;
+  border: #00ffff00;
+  color: rgb(10, 199, 39);
+  font-size: 4.6vw;
+  backdrop-filter: blur(4px);
+  background: #2020643b;
+  /* position: relative;
+  top: 1vh;
+  height: 5vh; */
+  /* -webkit-appearance: none; */
+}
+
+option {
+  border: solid 1px #DDDDDD;
+}
