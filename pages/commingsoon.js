@@ -14,7 +14,7 @@ import {
 import { browserName, CustomView } from 'react-device-detect';
 
 export default function Home() {
-	let url = 'https://value-parser.herokuapp.com/api/scrap';
+	let url = 'https://value-parser.herokuapp.com/scrap';
 	axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
 
 	// create state variable to store the value
