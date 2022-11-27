@@ -15,7 +15,7 @@ import Hamburger from 'hamburger-react';
 import { useState } from 'react';
 
 export default function Home() {
-	let url = 'http://localhost:5000/api/scrap';
+	let url = 'https://value-parser-backend.herokuapp.com/api/scrap';
 	axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
 
 	const [isOpen, setOpen] = useState(false);

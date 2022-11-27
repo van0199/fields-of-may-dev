@@ -24,7 +24,7 @@ export default function Home() {
 
 	const [isOpen, setOpen] = useState(true);
 
-	let url = 'http://localhost:5000/api/scrap';
+	let url = 'https://value-parser-backend.herokuapp.com/api/scrap';
 	axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
 
 	// create state variable to store the value
