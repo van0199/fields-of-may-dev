@@ -26,7 +26,7 @@ export default function Home() {
 	// fetch value from url and set the value to the state
 	React.useEffect(() => {
 		axios
-			.get(url, {
+			.get('https://value-parser-backend.herokuapp.com/api/scrap', {
 				headers: {
 					'Access-Control-Allow-Origin': '*',
 					'Content-Type': 'application/json',
